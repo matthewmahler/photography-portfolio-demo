@@ -3,17 +3,16 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
-    title: "Barcadia",
-    description: "A super-fast site using GatsbyJS",
-    author: "Morgan Baker",
+    title: "Photography Portfolio Demo",
+    description: "A super-fast site using GatsbyJS, to show off sick pics",
+    author: "Matthew Mahler",
     twitterUsername: "@dave",
     image: "/yellow-metal-design-decoration.jpg",
-    siteUrl: "https://barcadia.netlify.com",
+    siteUrl: "https://google.com",
   },
   /* Your site config here */
   plugins: [

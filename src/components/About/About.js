@@ -38,15 +38,15 @@ const About = ({ largePadding, id }) => {
             A super-fast theme that is easy to get started, using the power of
             GatsbyJS
           </Title>
-          <Link className="btn" to="products" smooth={true} duration={500}>
-            View Products
+          <Link className="btn" to="Collections" smooth={true} duration={500}>
+            View Collections
           </Link>
         </TitleArea>
         <ContentArea>
           <p>
             Using modern CSS properties such as grid, this theme is optmised for
             speed and mobile devices. Giving users an excellent experience on
-            any device. Future-proofing your product.
+            any device. Future-proofing your Collection.
           </p>
         </ContentArea>
       </Grid>

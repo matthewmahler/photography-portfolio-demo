@@ -156,11 +156,7 @@ const Footer = () => {
           </FooterMenu>
           <Copyright>
             Copyright &copy; {new Date().getFullYear()}{" "}
-            <a
-              href="https://www.linkedin.com/in/morgan-baker-developer-inverness/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="www.google.com" target="_blank" rel="noopener noreferrer">
               {siteMetadata.author}
             </a>
           </Copyright>

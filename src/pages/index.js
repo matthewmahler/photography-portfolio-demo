@@ -5,7 +5,7 @@ import Banner from "../components/Banner/Banner"
 import About from "../components/About/About"
 import Service from "../components/Service/Service"
 import StyledAbout from "../components/StyledAbout/StyledAbout"
-import FeaturedProducts from "../components/FeaturedProducts/FeaturedProducts"
+import FeaturedCollections from "../components/FeaturedCollections/FeaturedCollections"
 import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/SEO"
 import { Link } from "react-scroll"
@@ -19,14 +19,16 @@ const Index = () => {
           description
         }
       }
-      aboutSectionImg: file(relativePath: { eq: "mac-white-bg.jpeg" }) {
+      aboutSectionImg: file(
+        relativePath: { eq: "john-towner-89PFnHKg8HE-unsplash.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 3000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      featuredProductsImg: file(relativePath: { eq: "bark.jpg" }) {
+      featuredCollectionsImg: file(relativePath: { eq: "bark.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -58,9 +60,9 @@ const Index = () => {
       <Service largePadding={true} />
       <StyledAbout
         gradient="true"
-        img={data.featuredProductsImg.childImageSharp.fluid}
+        img={data.featuredCollectionsImg.childImageSharp.fluid}
       >
-        <FeaturedProducts id="products" largePadding={true} />
+        <FeaturedCollections id="Collections" largePadding={true} />
       </StyledAbout>
     </Layout>
   )

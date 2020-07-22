@@ -5,7 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
     query {
-      products: allContentfulProducts {
+      collections: allContentfulCollections {
         edges {
           node {
             slug
@@ -22,10 +22,10 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  data.products.edges.forEach(({ node }) => {
+  data.collections.edges.forEach(({ node }) => {
     createPage({
-      path: `products/${node.slug}`,
-      component: path.resolve("src/templates/product-template.js"),
+      path: `collections/${node.slug}`,
+      component: path.resolve("src/templates/collection-template.js"),
       context: {
         slug: node.slug,
       },

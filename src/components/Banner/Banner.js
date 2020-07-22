@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 const getImages = graphql`
   query HeroImage {
-    fluid: file(relativePath: { eq: "macbook.jpg" }) {
+    fluid: file(relativePath: { eq: "your-photo-here.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid_tracedSVG
